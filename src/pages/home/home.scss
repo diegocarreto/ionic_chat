@@ -1,0 +1,25 @@
+page-home {
+
+    .wrapper-message {
+        background-color: white;
+        border-radius: 7px;
+        padding: 15px;
+        max-width: 70%;
+        margin-bottom: 10px;
+    }
+
+    .name {
+        font-size: 20px;
+        color:color($colors,secondary);
+        font-weight: bold;
+    }
+
+    .message {
+        margin: 2px;
+    }
+
+    .your-messages {
+        align-self: flex-end;
+    }
+
+}

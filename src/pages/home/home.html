@@ -1,0 +1,45 @@
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic chat
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  The world is your oyster.
+  <p>
+    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+  </p>
+  <button (click)="goAbout()" >Go About</button>
+</ion-content> -->
+
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic chat 
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content style="background-color: #ece5dd;" padding #content>
+  <div style="display: flex; flex-direction: column;">
+    <div 
+    class="wrapper-message"
+    *ngFor="let item of messages"
+    [ngClass]="{'your-messages':item.idUser === user.id_user}">
+      <label class="name" > {{ item.name | titlecase}} </label>
+      <p class="message"> {{ item.message }} </p>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+    <ion-item>
+      <ion-textarea type="text" [(ngModel)]="message"></ion-textarea>
+      <button ion-button item-right (click)='sendMessage()' style=" height: 80%;">
+          Enviar
+      </button>
+    </ion-item>
+</ion-footer>

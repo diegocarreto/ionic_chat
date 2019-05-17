@@ -1,0 +1,28 @@
+instalar ionic 
+	npm install -g ionic
+	
+version de ionic
+	ionic --version
+	
+
+
+instalar paquetes 
+
+	npm i
+
+iniciar aplicacion
+	ionic serve
+	
+iniciar aplicacion modo compatibilidad
+	ionic serve -l
+	
+iniciar aplicacion se puede conectar al telefono con ionic devapp(con cuenta de usuario de ionic)
+	ionic serve - c
+	
+agregar pagina
+	ionic g page createAccount --module=false
+
+agregar servicio
+
+	ionic g provider messages
+
